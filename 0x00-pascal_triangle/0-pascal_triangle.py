@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 from itertools import pairwise
 def pascal_triangle(n):
     '''This takes in an integer 'n' and returns 
@@ -12,7 +12,7 @@ def pascal_triangle(n):
     '''
     starting = [1]
     output = [starting]
-    while len(output) < n +1 :
+    while len(output) < n :
         pair_units = pairwise(starting) #group elements in twos succesively     
         returned_sum = [sum(i) for i in pair_units]
         returned_sum.insert(0,1) #pascals beginning element is one
@@ -20,4 +20,6 @@ def pascal_triangle(n):
         starting = returned_sum
         output.append(returned_sum)
     return output
+
+print(pascal_triangle(5))
        
