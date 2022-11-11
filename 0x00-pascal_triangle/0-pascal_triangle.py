@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from itertools import pairwise
 def pascal_triangle(n):
     '''This takes in an integer 'n' and returns 
